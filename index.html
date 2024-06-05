@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de capacitación</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="imagenes/logo papa noel.png" type="image/x-icon">
+</head>
+<body>
+    <div id="game">
+        <div id="register">
+            <h1 class="title">Identificate</h1>
+            <input type="text" id="userId" placeholder="Ingresa tu ID">
+            <button onclick="startGame()">Comenzar</button>
+        </div>
+        <div id="level1" class="hidden">
+            <h1 class="title">Nivel 1: Verdadero o Falso</h1>
+            <div id="questions"></div>
+            <button onclick="checkLevel1()">Siguiente</button>
+        </div>
+        <div id="level2" class="hidden">
+            <h1 class="title">Nivel 2: Asociación de Palabras</h1>
+            <div id="associations" class="associations-container"></div>
+            <button onclick="checkLevel2()">Siguiente</button>
+        </div>
+        <div id="level3" class="hidden">
+            <h1 class="title">Nivel 3: Selección Múltiple</h1>
+            <div id="multipleChoice"></div>
+            <button onclick="checkLevel3()">Siguiente</button>
+        </div>
+        <div id="result" class="hidden">
+            <h1 class="title">¡Juego Completo!</h1>
+            <p id="resultMessage"></p>
+            <button onclick="resetGame()">Reiniciar</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+

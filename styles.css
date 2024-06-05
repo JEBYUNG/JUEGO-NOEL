@@ -1,0 +1,146 @@
+body {
+    background-color: #f3f2eb;
+    color: #000000; 
+    font-family: 'lobster', cursive; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0px;
+    text-align: center;
+}
+
+#game {
+    width: 100%;
+    max-width: 8000px;
+    margin: auto;
+    padding: 50px;
+    border: 100px solid #a70828;
+    border-radius: 100px;
+}
+
+.title {
+    font-family: 'Lobster', cursive;
+    font-size: 50px; /* Ajusta el tamaño según sea necesario */
+    color: #8B0000;
+}
+
+.subtitle {
+    font-family: 'lobster', cursive;
+    font-size: 30px; /* Ajusta el tamaño según sea necesario */
+    color: #8B0000;
+}
+
+input, button {
+    font-family: 'lobster', cursive;
+    font-size: 25px;
+    margin: 20px 0;
+}
+
+button {
+    background-color: #8B0000;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f093a6; 
+}
+
+.hidden {
+    display: none;
+}
+
+#questions div {
+    margin: 10px 0;
+    font-size: 25px;
+}
+
+.true-false-options {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    font-size: 25px;
+}
+
+.option {
+    background-color: #000000; /* Fondo negro */
+    color: #FFFFFF; /* Texto blanco */
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.option.selected-true {
+    background-color: #008000; /* Verde */
+}
+
+.option.selected-false {
+    background-color: #FF0000; /* Rojo */
+}
+
+.associations-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.associations-container div {
+    width: 60%;
+    overflow-y: auto;
+    max-height: 300px;
+}
+
+.word, .definition {
+    background-color: #000000; 
+    color: #FFFFFF; 
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    font-size: 25px;
+}
+
+.word {
+    cursor: move;
+    background-color: #ffffff; 
+    color: #000000;
+    border: 5px solid #000000; 
+    
+}
+
+.definition {
+    min-height: 50px;
+}
+
+.multiple-choice-options {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.mc-option {
+    background-color: #000000; /* Fondo negro */
+    color: #FFFFFF; /* Texto blanco */
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    width: fit-content;
+    text-align: center;
+    font-size: 25px;
+}
+
+.mc-option.selected {
+    background-color: #FFFFFF; /* Fondo blanco */
+    color: #000000; /* Texto negro */
+    border: 2px solid #000000; /* Borde negro */
+}
+
+.question-options-answer{
+    font-size: 25px;
+}
+
